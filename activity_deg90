@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deg90">
+
+    <TextView
+        android:id="@+id/Den"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Desnity"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtRho"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Den"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Diameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Pipe Diameter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Den" />
+
+    <TextView
+        android:id="@+id/DensityUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="34dp"
+        android:text="slugs/ft^3"
+        app:layout_constraintStart_toEndOf="@+id/txtRho"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDiam"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Diameter"
+        app:layout_constraintTop_toBottomOf="@+id/txtRho" />
+
+    <TextView
+        android:id="@+id/DiamUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="Inches"
+        app:layout_constraintStart_toEndOf="@+id/txtDiam"
+        app:layout_constraintTop_toBottomOf="@+id/DensityUnit" />
+
+    <TextView
+        android:id="@+id/BBLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:text="Barrels/Day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Diameter" />
+
+    <EditText
+        android:id="@+id/txtBBLD"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/BBLD"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiam" />
+
+    <TextView
+        android:id="@+id/Pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:text="Pressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BBLD" />
+
+    <EditText
+        android:id="@+id/txtPress"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Pressure"
+        app:layout_constraintTop_toBottomOf="@+id/txtBBLD" />
+
+    <TextView
+        android:id="@+id/PressUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:text="PSI"
+        app:layout_constraintStart_toEndOf="@+id/txtPress"
+        app:layout_constraintTop_toBottomOf="@+id/DiamUnit" />
+
+    <TextView
+        android:id="@+id/Velocity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:text="Velocity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pressure" />
+
+    <TextView
+        android:id="@+id/txtVel"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="29dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Velocity"
+        app:layout_constraintTop_toBottomOf="@+id/txtPress" />
+
+    <TextView
+        android:id="@+id/speedUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="41dp"
+        android:text="ft/s"
+        app:layout_constraintStart_toEndOf="@+id/txtVel"
+        app:layout_constraintTop_toBottomOf="@+id/PressUnit" />
+
+    <Button
+        android:id="@+id/deg90Butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVel" />
+
+    <TextView
+        android:id="@+id/FX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:text="FX"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deg90Butt" />
+
+    <TextView
+        android:id="@+id/txtFX"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="24dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/FX"
+        app:layout_constraintTop_toBottomOf="@+id/deg90Butt" />
+
+    <TextView
+        android:id="@+id/forceUnitX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="103dp"
+        android:text="lbf "
+        app:layout_constraintStart_toEndOf="@+id/txtFX"
+        app:layout_constraintTop_toBottomOf="@+id/speedUnit" />
+
+    <TextView
+        android:id="@+id/FY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="FY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FX" />
+
+    <TextView
+        android:id="@+id/txtFY"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="29dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/FY"
+        app:layout_constraintTop_toBottomOf="@+id/txtFX" />
+
+    <TextView
+        android:id="@+id/Resultant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:text="Resultant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FY" />
+
+    <TextView
+        android:id="@+id/txtRes"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Resultant"
+        app:layout_constraintTop_toBottomOf="@+id/txtFY" />
+
+    <TextView
+        android:id="@+id/forceUnitY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="32dp"
+        android:text="lbf "
+        app:layout_constraintStart_toEndOf="@+id/txtFY"
+        app:layout_constraintTop_toBottomOf="@+id/forceUnitX" />
+
+    <TextView
+        android:id="@+id/forceUnitR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="37dp"
+        android:text="lbf "
+        app:layout_constraintStart_toEndOf="@+id/txtRes"
+        app:layout_constraintTop_toBottomOf="@+id/forceUnitY" />
+
+    <Button
+        android:id="@+id/clearButt"
+        android:layout_width="95dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp"
+        android:text="Clear"
+        app:layout_constraintStart_toEndOf="@+id/deg90Butt"
+        app:layout_constraintTop_toBottomOf="@+id/txtVel" />
+
+</android.support.constraint.ConstraintLayout>
