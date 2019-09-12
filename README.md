@@ -1,6 +1,6 @@
 # Forces due to bends in pipes
 
-The momentum changes and the unbalanced internal pressure of the water leads to forces on the pipes.  The force diagram below helps to explain how the calculations where set for the variable angle. For the 90-degree angle, Fundamentals of Fluid Mechanics 7th edition by Munson was used. 
+The momentum changes and the unbalanced internal pressure of the water leads to forces on the pipes.  The force diagram below helps to explain how the calculations where set for the variable angle. For the 90-degree angle, Fundamentals of Fluid Mechanics 7th edition by Munson was used as reference. 
 ![alt text](https://github.com/cerdamario13/pipeForce/blob/master/pipe_bend_freebody_diagram.png)
 
 Image from:
