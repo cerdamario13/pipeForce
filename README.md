@@ -1,6 +1,6 @@
 # Forces due to bends in pipes
 
-The momentum changes and the unbalanced internal pressure of the water leads to forces on the pipes.  The force diagram below helps to explain how the calculations where set for the variable angle. For the 90-degree angle, Fundamentals of Fluid Mechanics 7th edition by Munson was used as reference. 
+The changes in momentum and the unbalanced internal pressure of the water create forces on the pipes. The force diagram below illustrates how calculations were set up for the variable angle. For the 90-degree angle, Fundamentals of Fluid Mechanics, 7th edition, by Munson served as a reference.
 ![alt text](https://github.com/cerdamario13/pipeForce/blob/master/pipe_bend_freebody_diagram.png)
 
 Image from:
@@ -8,7 +8,7 @@ http://www-mdp.eng.cam.ac.uk/web/library/enginfo/aerothermal_dvd_only/aero/fprop
 
 # Summary
 
-The purpose of this application is to determine the forces experienced on a pipe bend given the indicated parameters. To be used on oilfield applications since the volumetric flowrate is handled in barrels of production per day (one barrel of production is equivalent to 42 US gallons). Created using Android Developer Studio and Java. 
+This application aims to determine the forces experienced on a pipe bend based on the specified parameters. It is designed for oilfield applications, where volumetric flow rate is measured in barrels of production per day (with one barrel equivalent to 42 US gallons). Developed using Android Developer Studio and Java.
 
 # Values needed
 
